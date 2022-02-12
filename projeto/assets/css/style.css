@@ -22,7 +22,22 @@ body{
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 5px;
-    
-    
+    border-radius: 5px;    
+}
+
+#login{
+    text-align: right;
+}
+
+.inputForm{
+    height: 20px;
+}
+
+#nome{
+    width: 400px
+}
+
+.dadoCliente{
+    display: inline;
+    margin-bottom: 500px;
 }

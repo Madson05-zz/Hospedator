@@ -2,46 +2,61 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Quartos - Hospedator</title>
+    <link rel = "stylesheet" href = "../css/styleCadastro.css">
+    <title>Reserva - Hospedator</title>
 </head>
 <body>
-    <!--Inicio do Menu-->
-    <table class = "cabecalho"> 
-        <tr>
-            <td><a href="/index.html"><img src="../../imagens/logo.jpg" alt="Logo Hospedator"></a></td>
-            <td><a class = "item" href="./quartos.html">Gerenciar Quarto</a></td>
-            <td><a class = "item" href="./financeiro.html">Financeiro</a></td>
-            <td><button class = "botao" id="login" >Login</button><button class = "botao" id = "sair">Sair</button></td>
-        </tr>
-    </table>
-    <!--Fim do Menu--> 
-    <h2>Gerenciador de Quartos</h2>
-    <hr>
-
-    <form id = "reserva">
-        
-        
-        <div class = "dadoCliente">
-        <label>Nome completo: </label><input type="text" class = "inputForm" id="nome" placeholder="Digite o nome do cliente">
-        </div>
-
-        <div class = "dadoCliente">
-        <label >CPF:</label><input  type="text" class = "inputForm" id="cpf" placeholder="Digite o CPF">
-        </div>
-
-        <div class = "dadoCliente">
-            <label>Email: </label><input class = "inputForm" type="email" id="email">
-        </div>
-
-        <div class = "itemForm">
-            <label>Numero do Quarto: </label> <input type="number" class = "inputForm" id = "numero" placeholder="Digite o numero do quarto">
-            </div>
-
-    <button>Adicionar</button>
-    </form>
-
-
+    <div class = "formulário">
+        <form action="">
+            <fieldset>
+                <legend>
+                    <strong>
+                        Formulário de reserva
+                    </strong> 
+                </legend>
+                <br>
+                <div class = "boxDeEntrada">
+                    <input type="text" name = "nome" id = "nome">
+                    <label for="nome">Nome Completo</label>
+                </div>
+                <div class = "boxDeEntrada">
+                    <input type="text" name = "cpf" id = "cpf">
+                    <label for="cpf">CPF</label>
+                </div>
+                <div class = "boxDeEntrada">
+                    <input type="text" name = "telefone" id = "telefone">
+                    <label for="telefone">Telefone</label>
+                </div>
+                <div class = "boxDeEntrada">
+                    <input type="email" name = "email" id = "email">
+                    <label for="email">Email</label>
+                </div>
+                <p>Genero</p>
+                <input type="radio" name="genero" id="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" id="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="outros">
+                <label for="outros">Outros</label>
+                <p>Categoria de quarto</p>
+                <input type="radio" name="categoria" id="solteiro">
+                <label for="solteiro">Solteiro</label>
+                <input type="radio" name="categoria" id="duploSolteiro">
+                <label for="duploSolteiro">Duplo Solteiro</label>
+                <input type="radio" name="categoria" id="casal">
+                <label for="casal">Casal</label>
+                <div class = "boxDeEntrada">
+                    <input type="number" name="quarto" id="quarto">
+                    <label for="quarto">Número do Quarto:</label>
+                    
+                </div>
+                
+                <input type="submit" name = "submit" id = "submit">
+            </fieldset>
+        </form>
+    </div>
+    
 </body>
 </html>

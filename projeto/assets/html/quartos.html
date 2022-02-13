@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class = "formulario">
-        <form action="" method="">
+        <form action="">
             <fieldset>
                 <legend>
                     <strong>
@@ -18,39 +18,44 @@
                 </legend>
                 <br>
                 <div class = "boxDeEntrada">
-                    <input type="text" name = "nome" id = "nome">
-                    <label for="nome">Nome Completo</label>
+                    <input type="text" name = "nome" id = "nome" class = "inputUser" required>
+                    <label for="nome" class = "labelInput">Nome Completo</label>
                 </div>
+                <div class = "boxDeEntrada">
+                    <input type="text" name = "cpf" id = "cpf" class = "inputUser" required>
+                    <label for="cpf" class = "labelInput"> CPF</label>
+                </div>
+                <div class = "boxDeEntrada">
+                    <input type="text" name = "telefone" id = "telefone" class = "inputUser" required>
+                    <label for="telefone" class = "labelInput">Telefone</label>
+                </div>
+                <div class = "boxDeEntrada">
+                    <input type="email" name = "email" id = "email" class = "inputUser" required> 
+                    <label for="email" class = "labelInput">Email</label>
+                </div>
+                <p><strong>Genero</strong>:</p>
+                <input type="radio" name="genero" id="feminino" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" name="genero" id="masculino" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" name="genero" id="outros" value="outros" required>
+                <label for="outros">Outros</label>
+                <br>
+                <p><strong>Categoria de quarto: </strong></p>
+                <input type="radio" name="categoria" id="solteiro" value="solteiro" required>
+                <label for="solteiro">Solteiro</label>
+                <br>
+                <input type="radio" name="categoria" id="duploSolteiro" value="duploSolteiro" required>
+                <label for="duploSolteiro">Duplo Solteiro</label>
+                <br>
+                <input type="radio" name="categoria" id="casal" value="casal" required>
+                <label for="casal">Casal</label>
                 <br>
                 <div class = "boxDeEntrada">
-                    <input type="text" name = "cpf" id = "cpf">
-                    <label for="cpf">CPF</label>
-                </div>
-                <div class = "boxDeEntrada">
-                    <input type="text" name = "telefone" id = "telefone">
-                    <label for="telefone">Telefone</label>
-                </div>
-                <div class = "boxDeEntrada">
-                    <input type="email" name = "email" id = "email">
-                    <label for="email">Email</label>
-                </div>
-                <p>Genero</p>
-                <input type="radio" name="genero" id="feminino">
-                <label for="feminino">Feminino</label>
-                <input type="radio" name="genero" id="masculino">
-                <label for="masculino">Masculino</label>
-                <input type="radio" name="genero" id="outros">
-                <label for="outros">Outros</label>
-                <p>Categoria de quarto</p>
-                <input type="radio" name="categoria" id="solteiro">
-                <label for="solteiro">Solteiro</label>
-                <input type="radio" name="categoria" id="duploSolteiro">
-                <label for="duploSolteiro">Duplo Solteiro</label>
-                <input type="radio" name="categoria" id="casal">
-                <label for="casal">Casal</label>
-                <div class = "boxDeEntrada">
-                    <input type="number" name="quarto" id="quarto">
-                    <label for="quarto">Número do Quarto:</label>
+                    <input type="number" name="quarto" id="quarto" class = "inputUser" required>
+                    <label for="quarto" class = "labelInput">Número do Quarto:</label>
                     
                 </div>
                 
